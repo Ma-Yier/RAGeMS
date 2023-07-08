@@ -1,0 +1,375 @@
+test_ratio_1 ratioGene iMM904, date 25-Apr-2023 17:50:02 
+
+
+      _____   _____   _____   _____     _____     |
+     /  ___| /  _  \ |  _  \ |  _  \   / ___ \    |   COnstraint-Based Reconstruction and Analysis
+     | |     | | | | | |_| | | |_| |  | |___| |   |   The COBRA Toolbox - 2023
+     | |     | | | | |  _  { |  _  /  |  ___  |   |
+     | |___  | |_| | | |_| | | | \ \  | |   | |   |   Documentation:
+     \_____| \_____/ |_____/ |_|  \_\ |_|   |_|   |   http://opencobra.github.io/cobratoolbox
+                                                  | 
+
+ > Checking if git is installed ...  Done (version: 2.34.1).
+ > Checking if the repository is tracked using git ...  Done.
+ > Checking if curl is installed ...  Done.
+ > Checking if remote can be reached ...  Done.
+ > Initializing and updating submodules (this may take a while)... Done.
+ > Adding all the files of The COBRA Toolbox ...  Done.
+ > Define CB map output... set to svg.
+[Warning: Requested Model not present in the model directory.\n This is either
+due to the model not being downloaded, or not being part of the distributed
+models.] 
+[> In getDistributedModelFolder (line 37)
+  In initCobraToolbox (line 324)
+  In test_ratioGene (line 13)] 
+[Warning: libsbml binaries not on Matlab path: COBRA Toolbox will be unable to
+read/write SBML files] 
+[> In initCobraToolbox (line 345)
+  In test_ratioGene (line 13)] 
+ > Configuring solver environment variables ...
+   - [*---] ILOG_CPLEX_PATH: /opt/ibm/ILOG/CPLEX_Studio1210/cplex/matlab/x86-64_linux
+   - [--*-] GUROBI_PATH: /opt/gurobi1000//linux64/matlab
+   - [----] TOMLAB_PATH: --> set this path manually after installing the solver ( see https://opencobra.github.io/cobratoolbox/docs/solvers.html )
+   - [----] MOSEK_PATH: --> set this path manually after installing the solver ( see https://opencobra.github.io/cobratoolbox/docs/solvers.html )
+   Done.
+ > Checking available solvers and solver interfaces ...     0
+
+     0
+
+Check osense*c - A'*lam - w = 0 (stationarity):
+     0
+     0
+
+
+ > [gurobi] Primal optimality condition in solveCobraLP satisfied.
+ > [gurobi] Dual optimality condition in solveCobraLP satisfied.
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de
+CPXPARAM_Output_WriteLevel                       3
+CPXPARAM_Output_CloneLog                         -1
+Found incumbent of value 0.000000 after 0.00 sec. (0.00 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.00 sec. (0.00 ticks)
+Parallel b&c, 32 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.00 sec. (0.00 ticks)
+Could not find installation of tomlab_cplex, so it cannot be tested
+Could not find installation of mosek, so it cannot be tested
+Could not find installation of quadMinos, so it cannot be tested
+Could not find installation of dqqMinos, so it cannot be tested
+Could not find installation of cplex_direct, so it cannot be tested
+
+ > [cplexlp] Primal optimality condition in solveCobraLP satisfied.
+ > [cplexlp] Dual optimality condition in solveCobraLP satisfied.
+Could not find installation of tomlab_snopt, so it cannot be tested
+ Done.
+ > Setting default solvers ...Could not find installation of mosek, so it cannot be tested
+ Done.
+ > Saving the MATLAB path ... Done.
+   - The MATLAB path was saved as ~/pathdef.m.
+
+ > Summary of available solvers and solver interfaces
+
+			Support 	   LP 	 MILP 	   QP 	 MIQP 	  NLP 	   EP
+	------------------------------------------------------------------------------
+	gurobi       	active        	    1 	    1 	    1 	    1 	    - 	    -
+	ibm_cplex    	active        	    1 	    1 	    1 	    1 	    - 	    -
+	tomlab_cplex 	active        	    0 	    0 	    0 	    0 	    - 	    -
+	glpk         	active        	    1 	    1 	    - 	    - 	    - 	    -
+	mosek        	active        	    0 	    - 	    0 	    - 	    - 	    0
+	matlab       	active        	    1 	    - 	    - 	    - 	    1 	    -
+	pdco         	active        	    1 	    - 	    1 	    - 	    - 	    1
+	quadMinos    	active        	    0 	    - 	    - 	    - 	    - 	    -
+	dqqMinos     	active        	    0 	    - 	    0 	    - 	    - 	    -
+	cplex_direct 	active        	    0 	    0 	    0 	    - 	    - 	    -
+	cplexlp      	active        	    1 	    - 	    - 	    - 	    - 	    -
+	qpng         	passive       	    - 	    - 	    1 	    - 	    - 	    -
+	tomlab_snopt 	passive       	    - 	    - 	    - 	    - 	    0 	    -
+	lp_solve     	legacy        	    1 	    - 	    - 	    - 	    - 	    -
+	------------------------------------------------------------------------------
+	Total        	-             	    7 	    3 	    4 	    2 	    1 	    1
+
+ + Legend: - = not applicable, 0 = solver not compatible or not installed, 1 = solver installed.
+
+
+ > You can solve LP problems using: 'gurobi' - 'ibm_cplex' - 'cplexlp' 
+ > You can solve MILP problems using: 'gurobi' - 'ibm_cplex' 
+ > You can solve QP problems using: 'gurobi' - 'ibm_cplex' 
+ > You can solve MIQP problems using: 'gurobi' - 'ibm_cplex' 
+ > You can solve NLP problems using: 
+ > You can solve EP problems using: 
+
+ > Checking for available updates ...
+git fetch origin: Signal 127
+error: cannot open .git/FETCH_HEAD: Permission denied
+ > The changes of The COBRA Toolbox could not be fetched. Please make sure you have an active internet connection. > remote.origin.url = https://github.com/opencobra/cobratoolbox.git
+.
+ > currentBranch = master.
+ > The COBRA Toolbox is up-to-date.
+removing: /usr/local/matlab/toolbox/cobratoolbox/src/analysis/thermo/componentContribution/new
+removing: /usr/local/matlab/toolbox/cobratoolbox/src/analysis/thermo/groupContribution/new
+removing: /usr/local/matlab/toolbox/cobratoolbox/src/analysis/thermo/inchi/new
+removing: /usr/local/matlab/toolbox/cobratoolbox/src/analysis/thermo/molFiles/new
+removing: /usr/local/matlab/toolbox/cobratoolbox/src/analysis/thermo/protons/new
+removing: /usr/local/matlab/toolbox/cobratoolbox/src/analysis/thermo/trainingModel/new
+
+ > changeCobraSolver: Gurobi interface added to MATLAB path.
+ > isCompatible: The solver compatibility cannot be verified with MATLAB R2019b.
+{Unrecognized function or variable 'iMM904_core'.
+
+Error in test_ratioGene (line 20)
+model=iMM904_core;
+} 
+test_ratio_1 ratioGene iMM904, date 25-Apr-2023 18:10:20 
+
+
+      _____   _____   _____   _____     _____     |
+     /  ___| /  _  \ |  _  \ |  _  \   / ___ \    |   COnstraint-Based Reconstruction and Analysis
+     | |     | | | | | |_| | | |_| |  | |___| |   |   The COBRA Toolbox - 2023
+     | |     | | | | |  _  { |  _  /  |  ___  |   |
+     | |___  | |_| | | |_| | | | \ \  | |   | |   |   Documentation:
+     \_____| \_____/ |_____/ |_|  \_\ |_|   |_|   |   http://opencobra.github.io/cobratoolbox
+                                                  | 
+
+ > Checking if git is installed ...  Done (version: 2.34.1).
+ > Checking if the repository is tracked using git ...  Done.
+ > Checking if curl is installed ...  Done.
+ > Checking if remote can be reached ...  Done.
+ > Initializing and updating submodules (this may take a while)... Done.
+ > Adding all the files of The COBRA Toolbox ...  Done.
+ > Define CB map output... set to svg.
+[Warning: Requested Model not present in the model directory.\n This is either
+due to the model not being downloaded, or not being part of the distributed
+models.] 
+[> In getDistributedModelFolder (line 37)
+  In initCobraToolbox (line 324)
+  In test_ratioGene (line 13)] 
+[Warning: libsbml binaries not on Matlab path: COBRA Toolbox will be unable to
+read/write SBML files] 
+[> In initCobraToolbox (line 345)
+  In test_ratioGene (line 13)] 
+ > Configuring solver environment variables ...
+   - [*---] ILOG_CPLEX_PATH: /opt/ibm/ILOG/CPLEX_Studio1210/cplex/matlab/x86-64_linux
+   - [--*-] GUROBI_PATH: /opt/gurobi1000//linux64/matlab
+   - [----] TOMLAB_PATH: --> set this path manually after installing the solver ( see https://opencobra.github.io/cobratoolbox/docs/solvers.html )
+   - [----] MOSEK_PATH: --> set this path manually after installing the solver ( see https://opencobra.github.io/cobratoolbox/docs/solvers.html )
+   Done.
+ > Checking available solvers and solver interfaces ...     0
+
+     0
+
+Check osense*c - A'*lam - w = 0 (stationarity):
+     0
+     0
+
+
+ > [gurobi] Primal optimality condition in solveCobraLP satisfied.
+ > [gurobi] Dual optimality condition in solveCobraLP satisfied.
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de
+CPXPARAM_Output_WriteLevel                       3
+CPXPARAM_Output_CloneLog                         -1
+Found incumbent of value 0.000000 after 0.00 sec. (0.00 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.00 sec. (0.00 ticks)
+Parallel b&c, 32 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.00 sec. (0.00 ticks)
+Could not find installation of tomlab_cplex, so it cannot be tested
+Could not find installation of mosek, so it cannot be tested
+Could not find installation of quadMinos, so it cannot be tested
+Could not find installation of dqqMinos, so it cannot be tested
+Could not find installation of cplex_direct, so it cannot be tested
+
+ > [cplexlp] Primal optimality condition in solveCobraLP satisfied.
+ > [cplexlp] Dual optimality condition in solveCobraLP satisfied.
+Could not find installation of tomlab_snopt, so it cannot be tested
+ Done.
+ > Setting default solvers ...Could not find installation of mosek, so it cannot be tested
+ Done.
+ > Saving the MATLAB path ... Done.
+   - The MATLAB path was saved as ~/pathdef.m.
+
+ > Summary of available solvers and solver interfaces
+
+			Support 	   LP 	 MILP 	   QP 	 MIQP 	  NLP 	   EP
+	------------------------------------------------------------------------------
+	gurobi       	active        	    1 	    1 	    1 	    1 	    - 	    -
+	ibm_cplex    	active        	    1 	    1 	    1 	    1 	    - 	    -
+	tomlab_cplex 	active        	    0 	    0 	    0 	    0 	    - 	    -
+	glpk         	active        	    1 	    1 	    - 	    - 	    - 	    -
+	mosek        	active        	    0 	    - 	    0 	    - 	    - 	    0
+	matlab       	active        	    1 	    - 	    - 	    - 	    1 	    -
+	pdco         	active        	    1 	    - 	    1 	    - 	    - 	    1
+	quadMinos    	active        	    0 	    - 	    - 	    - 	    - 	    -
+	dqqMinos     	active        	    0 	    - 	    0 	    - 	    - 	    -
+	cplex_direct 	active        	    0 	    0 	    0 	    - 	    - 	    -
+	cplexlp      	active        	    1 	    - 	    - 	    - 	    - 	    -
+	qpng         	passive       	    - 	    - 	    1 	    - 	    - 	    -
+	tomlab_snopt 	passive       	    - 	    - 	    - 	    - 	    0 	    -
+	lp_solve     	legacy        	    1 	    - 	    - 	    - 	    - 	    -
+	------------------------------------------------------------------------------
+	Total        	-             	    7 	    3 	    4 	    2 	    1 	    1
+
+ + Legend: - = not applicable, 0 = solver not compatible or not installed, 1 = solver installed.
+
+
+ > You can solve LP problems using: 'gurobi' - 'ibm_cplex' - 'cplexlp' 
+ > You can solve MILP problems using: 'gurobi' - 'ibm_cplex' 
+ > You can solve QP problems using: 'gurobi' - 'ibm_cplex' 
+ > You can solve MIQP problems using: 'gurobi' - 'ibm_cplex' 
+ > You can solve NLP problems using: 
+ > You can solve EP problems using: 
+
+ > Checking for available updates ...
+git fetch origin: Signal 127
+error: cannot open .git/FETCH_HEAD: Permission denied
+ > The changes of The COBRA Toolbox could not be fetched. Please make sure you have an active internet connection. > remote.origin.url = https://github.com/opencobra/cobratoolbox.git
+.
+ > currentBranch = master.
+ > The COBRA Toolbox is up-to-date.
+removing: /usr/local/matlab/toolbox/cobratoolbox/src/analysis/thermo/componentContribution/new
+removing: /usr/local/matlab/toolbox/cobratoolbox/src/analysis/thermo/groupContribution/new
+removing: /usr/local/matlab/toolbox/cobratoolbox/src/analysis/thermo/inchi/new
+removing: /usr/local/matlab/toolbox/cobratoolbox/src/analysis/thermo/molFiles/new
+removing: /usr/local/matlab/toolbox/cobratoolbox/src/analysis/thermo/protons/new
+removing: /usr/local/matlab/toolbox/cobratoolbox/src/analysis/thermo/trainingModel/new
+
+ > changeCobraSolver: Gurobi interface added to MATLAB path.
+ > isCompatible: The solver compatibility cannot be verified with MATLAB R2019b.
+Starting parallel pool (parpool) using the 'local' profile ...
+Connected to the parallel pool (number of workers: 12).
+Elapsed time is 30619.612435 seconds.
+success iMM904 ------------------ 
+success:275.000000 
+test_ratio_1 ratioGene iJR904, date 26-Apr-2023 02:41:01 
+
+
+      _____   _____   _____   _____     _____     |
+     /  ___| /  _  \ |  _  \ |  _  \   / ___ \    |   COnstraint-Based Reconstruction and Analysis
+     | |     | | | | | |_| | | |_| |  | |___| |   |   The COBRA Toolbox - 2023
+     | |     | | | | |  _  { |  _  /  |  ___  |   |
+     | |___  | |_| | | |_| | | | \ \  | |   | |   |   Documentation:
+     \_____| \_____/ |_____/ |_|  \_\ |_|   |_|   |   http://opencobra.github.io/cobratoolbox
+                                                  | 
+
+ > Checking if git is installed ...  Done (version: 2.34.1).
+ > Checking if the repository is tracked using git ...  Done.
+ > Checking if curl is installed ...  Done.
+ > Checking if remote can be reached ...  Done.
+ > Initializing and updating submodules (this may take a while)... Done.
+ > Adding all the files of The COBRA Toolbox ...  Done.
+ > Define CB map output... set to svg.
+[Warning: Requested Model not present in the model directory.\n This is either
+due to the model not being downloaded, or not being part of the distributed
+models.] 
+[> In getDistributedModelFolder (line 37)
+  In initCobraToolbox (line 324)
+  In test_ratioGene (line 136)] 
+[Warning: libsbml binaries not on Matlab path: COBRA Toolbox will be unable to
+read/write SBML files] 
+[> In initCobraToolbox (line 345)
+  In test_ratioGene (line 136)] 
+ > Configuring solver environment variables ...
+   - [*---] ILOG_CPLEX_PATH: /opt/ibm/ILOG/CPLEX_Studio1210/cplex/matlab/x86-64_linux
+   - [*---] GUROBI_PATH: /opt/gurobi1000/linux64/matlab
+   - [----] TOMLAB_PATH: --> set this path manually after installing the solver ( see https://opencobra.github.io/cobratoolbox/docs/solvers.html )
+   - [----] MOSEK_PATH: --> set this path manually after installing the solver ( see https://opencobra.github.io/cobratoolbox/docs/solvers.html )
+   Done.
+ > Checking available solvers and solver interfaces ...     0
+
+     0
+
+Check osense*c - A'*lam - w = 0 (stationarity):
+     0
+     0
+
+
+ > [gurobi] Primal optimality condition in solveCobraLP satisfied.
+ > [gurobi] Dual optimality condition in solveCobraLP satisfied.
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de
+CPXPARAM_Output_WriteLevel                       3
+CPXPARAM_Output_CloneLog                         -1
+Found incumbent of value 0.000000 after 0.00 sec. (0.00 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.00 sec. (0.00 ticks)
+Parallel b&c, 32 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.00 sec. (0.00 ticks)
+Could not find installation of tomlab_cplex, so it cannot be tested
+Could not find installation of mosek, so it cannot be tested
+Could not find installation of quadMinos, so it cannot be tested
+Could not find installation of dqqMinos, so it cannot be tested
+Could not find installation of cplex_direct, so it cannot be tested
+
+ > [cplexlp] Primal optimality condition in solveCobraLP satisfied.
+ > [cplexlp] Dual optimality condition in solveCobraLP satisfied.
+Could not find installation of tomlab_snopt, so it cannot be tested
+ Done.
+ > Setting default solvers ...Could not find installation of mosek, so it cannot be tested
+ Done.
+ > Saving the MATLAB path ... Done.
+   - The MATLAB path was saved as ~/pathdef.m.
+
+ > Summary of available solvers and solver interfaces
+
+			Support 	   LP 	 MILP 	   QP 	 MIQP 	  NLP 	   EP
+	------------------------------------------------------------------------------
+	gurobi       	active        	    1 	    1 	    1 	    1 	    - 	    -
+	ibm_cplex    	active        	    1 	    1 	    1 	    1 	    - 	    -
+	tomlab_cplex 	active        	    0 	    0 	    0 	    0 	    - 	    -
+	glpk         	active        	    1 	    1 	    - 	    - 	    - 	    -
+	mosek        	active        	    0 	    - 	    0 	    - 	    - 	    0
+	matlab       	active        	    1 	    - 	    - 	    - 	    1 	    -
+	pdco         	active        	    1 	    - 	    1 	    - 	    - 	    1
+	quadMinos    	active        	    0 	    - 	    - 	    - 	    - 	    -
+	dqqMinos     	active        	    0 	    - 	    0 	    - 	    - 	    -
+	cplex_direct 	active        	    0 	    0 	    0 	    - 	    - 	    -
+	cplexlp      	active        	    1 	    - 	    - 	    - 	    - 	    -
+	qpng         	passive       	    - 	    - 	    1 	    - 	    - 	    -
+	tomlab_snopt 	passive       	    - 	    - 	    - 	    - 	    0 	    -
+	lp_solve     	legacy        	    1 	    - 	    - 	    - 	    - 	    -
+	------------------------------------------------------------------------------
+	Total        	-             	    7 	    3 	    4 	    2 	    1 	    1
+
+ + Legend: - = not applicable, 0 = solver not compatible or not installed, 1 = solver installed.
+
+
+ > You can solve LP problems using: 'gurobi' - 'ibm_cplex' - 'cplexlp' 
+ > You can solve MILP problems using: 'gurobi' - 'ibm_cplex' 
+ > You can solve QP problems using: 'gurobi' - 'ibm_cplex' 
+ > You can solve MIQP problems using: 'gurobi' - 'ibm_cplex' 
+ > You can solve NLP problems using: 
+ > You can solve EP problems using: 
+
+ > Checking for available updates ...
+git fetch origin: Signal 127
+error: cannot open .git/FETCH_HEAD: Permission denied
+ > The changes of The COBRA Toolbox could not be fetched. Please make sure you have an active internet connection. > remote.origin.url = https://github.com/opencobra/cobratoolbox.git
+.
+ > currentBranch = master.
+ > The COBRA Toolbox is up-to-date.
+removing: /usr/local/matlab/toolbox/cobratoolbox/src/analysis/thermo/componentContribution/new
+removing: /usr/local/matlab/toolbox/cobratoolbox/src/analysis/thermo/groupContribution/new
+removing: /usr/local/matlab/toolbox/cobratoolbox/src/analysis/thermo/inchi/new
+removing: /usr/local/matlab/toolbox/cobratoolbox/src/analysis/thermo/molFiles/new
+removing: /usr/local/matlab/toolbox/cobratoolbox/src/analysis/thermo/protons/new
+removing: /usr/local/matlab/toolbox/cobratoolbox/src/analysis/thermo/trainingModel/new
+
+ > changeCobraSolver: Gurobi interface added to MATLAB path.
+ > isCompatible: The solver compatibility cannot be verified with MATLAB R2019b.
+Starting parallel pool (parpool) using the 'local' profile ...
+Connected to the parallel pool (number of workers: 32).
+Elapsed time is 9929.819148 seconds.
+success iJR904 ------------------ 
+success:38.000000 
